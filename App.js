@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, Keyboard, ScrollView } from 'react-native';
 import { TextInput, Button, Card, Title, Paragraph, List, Portal, Modal, Provider } from 'react-native-paper';
-import logo from './assets/correios-logo.png';
+import logo from './assets/mercado-pago-seeklogo.png';
 
 export default function App() {
   // HOOKS
@@ -126,7 +126,10 @@ export default function App() {
                 ))}
               </List.Accordion>
             </List.Section>
-            <Title>Busca de CEP</Title>
+            <Title 
+            style={{fontWeight: 'bold'}}>
+              Busca de CEP
+            </Title>
             <TextInput
               label="Digite seu CEP"
               value={cep}
@@ -200,12 +203,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'yellow',
+    backgroundColor: '#00BFFF',
     padding: 20,
   },
   logo: {
-    width: 150,
-    height: 150,
+    width: 100,
+    height: 94,
     marginBottom: 20,
   },
   input: {
